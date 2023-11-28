@@ -1,8 +1,42 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+star-gazer/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── api/
+│   │   ├── NasaApi.js
+│   │   ├── WeatherApi.js
+│   │   └── NewsApi.js
+│   │
+│   ├── components/
+│   │   ├── NavBar.js
+│   │   ├── WeatherPage.js
+│   │   ├── NasaPage.js
+│   │   └── NewsPage.js
+│   │
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+│
+├── package.json
+└── README.md
+```
 
-## Available Scripts
+
+
+  // <Router>
+
+​    // <Route path="WeatherPage" component={WeatherPage} />
+
+​    {/* <Route path="/nasa" component={NasaPage} /> */}
+
+​    {/* <Route path="/news" component={NewsPage} /> */}
+
+  {/* </Router> */}
 
 In the project directory, you can run:
 
