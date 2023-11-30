@@ -1,0 +1,40 @@
+.image-carousel-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .image-search-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .carousel-caption h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    color: #f8f9fa;
+    font-size: 16px;
+  }
+  
+
+.full-page-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  

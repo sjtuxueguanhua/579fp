@@ -1,0 +1,95 @@
+.weather-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f3f4f6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .weather-header {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  .weather-info {
+    font-size: 18px;
+    color: #34495e;
+    margin: 12px 0;
+    line-height: 1.6;
+  }
+  
+  .weather-info span {
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  .input-group {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .input-group input,
+  .city-selector select {
+    margin: 0 5px;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: calc(50% - 12px);
+    font-size: 16px;
+  }
+  
+  .input-group button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-group button:hover {
+    background-color: #3498db;
+  }
+  
+  .city-selector {
+    margin: 25px 0;
+    text-align: center;
+  }
+  
+  .city-selector select {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  
+  .header-title {
+    font-size: 30px; /* Adjust the size as needed */
+    color: #3498db; /* Choose a color that fits your design */
+    text-align: center; /* Center align the header */
+    margin-top: 20px; /* Add some space at the top */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    font-family: 'Arial', sans-serif; /* Optional: Set a specific font */
+    font-weight: normal; /* Adjust the weight of the font */
+  }
+  
+
+
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .input-group input,
+    .city-selector select {
+      width: 100%;
+    }
+  }
+  
