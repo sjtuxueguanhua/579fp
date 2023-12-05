@@ -15,6 +15,11 @@
     margin-bottom: 25px;
     font-weight: bold;
   }
+  .error-message{
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
   
   .weather-info {
     font-size: 18px;

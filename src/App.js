@@ -2,7 +2,7 @@
 //$env:NODE_OPTIONS = "--openssl-legacy-provider"
 import NasaMediaCarousel from './components/NasaMediaCarousel';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import WeatherPage from './components/WeatherPage';
 import NasaPage from './components/NasaPage';

@@ -1,0 +1,27 @@
+.cme-analysis-container {
+    padding: 20px;
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .cme-header {
+    text-align: center;
+    color: #4e4e50;
+    margin-bottom: 20px;
+  }
+  
+  .cme-introduction {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #d1d1d1;
+  }
+  
+  .card-row {
+    margin-top: 20px;
+  }
+  
+  /* Additional styling for cards as needed */
+  

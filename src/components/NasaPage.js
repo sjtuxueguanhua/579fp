@@ -22,8 +22,10 @@ const NasaPage = () => {
 
 
   return (
+    
     <div className="nasa-page-container">
       {nasaData ? (
+        
         <div>
           <h1 className="nasa-page-header">Today's Astronomy Picture</h1>
           <h2>{nasaData.title}</h2>
@@ -35,7 +37,7 @@ const NasaPage = () => {
       )}
 
 
-      {/* Similarly display data for other APIs */}
+
     </div>
 
     

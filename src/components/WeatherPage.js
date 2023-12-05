@@ -13,11 +13,35 @@ const WeatherPage = () => {
   const [lon, setLon] = useState('');
   const [selectedCountry, setSelectedCountry] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
+  const [error, setError] = useState('');
 
+
+  //check if user input is valid
+  const isValidCoordinate = (value, type) => {
+    const num = parseFloat(value);
+    if (isNaN(num)) return false;
+
+    if (type === 'latitude') return num >= -90 && num <= 90;
+    if (type === 'longitude') return num >= -180 && num <= 180;
+
+    return false;
+  };
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setError('');
+
+    if (!isValidCoordinate(lat, 'latitude') || !isValidCoordinate(lon, 'longitude')) {
+      setError('Please enter valid latitude and longitude values.');
+      setLat('');
+      setLon('');
+      return;
+    }
+
     const data = await fetchWeatherData(lat, lon);
     setWeatherData(data);
+      console.log('error is ',error)
+      setLat('');
+      setLon('');
   };
   const handleCountryChange = (event) => {
     setSelectedCountry(event.target.value);
@@ -31,6 +55,8 @@ const WeatherPage = () => {
     }
   };
 
+
+  
   useEffect(() => {
     const loadData = async () => {
       const data = await fetchWeatherData();
@@ -65,6 +91,7 @@ const WeatherPage = () => {
           <button type="submit">Get Weather</button>
         </div>
       </form>
+      {error && <p className="weather-header">{error}</p> }
 
       {/* Country Selector */}
       <div className="country-selector">
